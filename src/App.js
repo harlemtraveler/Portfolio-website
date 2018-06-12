@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Whoops404 from './components/Whoops404';
 import About from './components/About';
 import Clients from './components/Clients';
+import Contact from './components/Contact';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/clients" component={Clients} />
+          <Route path="/contact" component={Contact} />
           <Route path="/reactfilm" component={() => window.location = 'https://react-film-keaveny.surge.sh/'} />
           <Route path="/github" component={() => window.location = 'https://github.com/harlemtraveler?tab=repositories'} />
           <Route component={Whoops404} />
