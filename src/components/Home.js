@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 import Nav from './partials/nav';
 import Footer from './partials/Footer';
 import Projects from './Projects';
@@ -14,8 +15,12 @@ class Home extends Component {
             {/* <button className="home-button-center left-button">Explore</button>
             <button className="home-button-center right-button">Contact</button> */}
         </div>
-        <button className="home-button-center left-button">Explore</button>
-        <button className="home-button-center right-button">Contact</button>
+        <NavLink className="left-button" to="/projects">
+          <button className="home-button-center left-button">Explore</button>
+        </NavLink>
+        <NavLink className="right-button" to="/contact">
+          <button className="home-button-center right-button">Contact</button>
+        </NavLink>
     </div>
     );
   }
