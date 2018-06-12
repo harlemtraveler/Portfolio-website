@@ -1,0 +1,367 @@
+.App {
+  text-align: center;
+  /* background-color: black; */
+  /* background-image: url("./img/orange-laptop-background.jpeg"); */
+  height: 800px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 1em;
+}
+
+.main {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: 40% 30% 30%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+  /* grid-gap: 1em; */
+  /* grid-auto-rows: 100px; */
+  grid-auto-rows: minmax(100px; auto);
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+/* .nested {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows: 70px;
+  grid-gap: 1em;
+}
+
+.nested > div {
+  border: #333 1px solid;
+  padding: 1em;
+} */
+
+.grid > div {
+  /* background: #eee; */
+  /* padding: 1em; */
+}
+
+.grid > div:nth-child(odd) {
+  /* background: #ddd; */
+}
+
+.square {
+  /* background-image: url("http://lorempixel.com/400/200"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  grid-auto-rows: minmax(100px; auto);
+}
+
+.square1 {
+  background-image: url("./img/laptop-icon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.square-text {
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.square:hover .square-text {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.square2 {
+  background-image: url("./img/cloud-red.jpg");
+}
+
+.square3 {
+  background-image: url("./img/router-darkblue.jpg");
+}
+
+.square4 {
+  background-image: url("./img/mouse-yellow.jpg");
+}
+
+.square5 {
+  background-image: url("./img/desktop-pink.jpg");
+}
+
+.square6 {
+  background-image: url("./img/server-navyblue.jpg");
+}
+
+/* align-self: start;
+align-self: end;
+justify-self: end;
+grid-column: 2/4;
+grid-column: 1;
+grid-column: 3;
+grid-column: 1/3;
+grid-row: 1/3;
+grid-row: 3; */
+
+.main {
+  margin: 0;
+  /* margin-top: 4em; */
+  height: 800px;
+
+}
+
+.page {
+  height: 800px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* color: white; */
+  /* background-color: rgba(51, 51, 51, 0.5); */
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /* color: white; */
+}
+
+.top-nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.flex-item {
+  margin: 10px;
+}
+
+.flex-item1 {
+  margin-top: 0;
+  left: 0;
+}
+
+.nav-title-name-container {
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.nav-name {
+  padding: 0;
+  margin-right: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.nav-role {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 40px;
+  text-align: right;
+}
+
+.footer-grid {
+  /* background-color: rgba(51, 51, 51, 0.5); */
+  background-color: white;
+  border-top: 1px solid black;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+}
+
+.footer-container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-text {
+  grid-column: 3/4;
+}
+/* .home-grid {
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+} */
+
+.home-container {
+  height: 800px;
+  background-image: url("./img/home-background-flat.jpg");
+  background-position: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  /* padding-top: 20px; */
+}
+
+.home-button-center {
+  height: 40px;
+  width: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: rgba(21, 62, 91, 0.5);
+  /* color: #fff; */
+  border: 2px solid #fff;
+  transition: all 0.3s ease-out;
+}
+
+.home-button-center:hover {
+  background: rgb(21, 62, 91);
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+.left-button {
+  height: 40px;
+  width: 180px;
+  text-align: center;
+  grid-column: 5;
+  grid-row: 6;
+}
+
+.right-button {
+  grid-column: 6;
+  grid-row: 6;
+}
+
+header {
+  grid-column: 1/8;
+}
+
+.logo-icon {
+  height: 70px;
+  width: 70px;
+  margin-top: 0;
+}
+
+.about-grid {
+  height: 800px;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.clients-grid {
+  height: 800px;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.about-figure {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 3em;
+}
+
+.clients-figure {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 3em;
+}
+
+.avatar-container {
+  height: 350px;
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.about-avatar-container {
+  background-image: url("./img/southpark-about-avatar.gif");
+}
+
+.clients-avatar-container {
+  background-image: url("./img/headphones-fuschia.jpg");
+}
+
+
+.project-list {
+  grid-column: 1;
+  display: grid;
+  grid-template-row:repeat(3, 1fr);
+
+}
+
+.project-item {
+
+}
+
+.pi1 {
+  grid-row: 1
+}
+
+.pi2 {
+  grid-row: 2
+}
+
+.pi3 {
+  grid-row: 3
+}
+
+
+
+
+/* * {
+  border: 1px solid black;
+} */
