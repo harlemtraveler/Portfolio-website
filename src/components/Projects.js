@@ -50,7 +50,7 @@ class Projects extends Component {
             <li href="project-item pi1"><a href="https://react-film-keaveny.surge.sh/" id="p1">React Film</a></li>
             <li href="project-item pi2"><a href="https://moviebase-python-rails-project.herokuapp.com/" id="p2">MovieBase</a></li>
             <li href="project-item pi3"><a href="https://ruby-on-rails-crud-blog.herokuapp.com/" id="p3">Ruby on Rails Blog</a></li>
-            <li href="project-item pi4"><a href="https://github.com/harlemtraveler/Chat-App" id="p3">Coming Soon! {React Chat App}</a></li>
+            <li href="project-item pi4"><a href="https://github.com/harlemtraveler/Chat-App" id="p3">Coming Soon! [React Chat App]</a></li>
           </ul>
         </div>
         </PageTemplate>
