@@ -15,6 +15,9 @@ class Contact extends Component {
                 <p>
                   <a href="https://www.linkedin.com/in/timothykeaveny" alt="linkedin link">LinkedIn</a>
                 </p>
+                <p>
+                  <a href="https://github.com/harlemtraveler?tab=repositories" alt="github link">Github</a>
+                </p>
               </figcaption>
             </figure>
           </div>
