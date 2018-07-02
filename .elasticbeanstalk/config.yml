@@ -1,14 +1,18 @@
 branch-defaults:
   development:
-    environment: null
+    environment: Dev-env
     group_suffix: null
   master:
-    environment: portfolio-dev
+    environment: Dev-env
     group_suffix: null
+environment-defaults:
+  Dev-env:
+    branch: null
+    repository: null
 global:
-  application_name: portfolio
-  branch: null
-  default_ec2_keyname: aws-eb
+  application_name: WebDev-Portfolio
+  # branch: null
+  default_ec2_keyname: null
   default_platform: Node.js
   default_region: us-east-1
   include_git_submodules: true
