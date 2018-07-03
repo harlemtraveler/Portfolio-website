@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Nav from './components/partials/nav';
 import Footer from './components/partials/Footer';
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />
@@ -26,7 +26,7 @@ class App extends Component {
             <Route path="/github" component={() => window.location = 'https://github.com/harlemtraveler?tab=repositories'} />
             <Route component={Whoops404} />
           </Switch>
-      </BrowserRouter>
+      </HashRouter>
       </div>
     );
   }
