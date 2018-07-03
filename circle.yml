@@ -1,0 +1,14 @@
+dependencies:
+  pre:
+    - pip install awsebcli
+deployment:
+  development:
+    branch: development
+    commands:
+      - eb use Development-env --profile default
+      - eb deploy --profile default
+  production:
+    branch: master
+    commands:
+      - eb use production-env-demo-app --profile default
+      - eb deploy --profile default
