@@ -12,3 +12,6 @@ deployment:
     commands:
       - eb use production-env-demo-app --profile default
       - eb deploy --profile default
+test:
+  override:
+    - "true"
