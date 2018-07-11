@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/reactfilm" component={() => window.location = 'https://react-film-keaveny.surge.sh/'} />
           <Route path="/github" component={() => window.location = 'https://github.com/harlemtraveler?tab=repositories'} />
           <Route component={Whoops404} />
-        </BrowserRouter>
+        </Switch>
       </div>
     );
   }
