@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-=======
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { BrowserRouter as Router} from 'react-router-dom';
->>>>>>> development
 import './App.css';
 import Nav from './components/partials/nav';
 import Footer from './components/partials/Footer';
