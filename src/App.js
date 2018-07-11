@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+=======
+import { Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
+>>>>>>> development
 import './App.css';
 import Nav from './components/partials/nav';
 import Footer from './components/partials/Footer';
@@ -14,8 +19,21 @@ import Contact from './components/Contact';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Switch>
+        <Router className="App">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/about" component={About} />
+              <Route path="/clients" component={Clients} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/reactfilm" component={() => window.location = 'https://react-film-keaveny.surge.sh/'} />
+              <Route path="/github" component={() => window.location = 'https://github.com/harlemtraveler?tab=repositories'} />
+              <Route component={Whoops404} />
+            </Switch>
+        </Router>
+    );
+
+        {/* <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
@@ -24,9 +42,7 @@ class App extends Component {
           <Route path="/reactfilm" component={() => window.location = 'https://react-film-keaveny.surge.sh/'} />
           <Route path="/github" component={() => window.location = 'https://github.com/harlemtraveler?tab=repositories'} />
           <Route component={Whoops404} />
-        </Switch>
-      </div>
-    );
+        </Switch> */}
   }
 }
 
