@@ -1,3 +1,5 @@
+/* @import "./styles/variable.css";
+@import "./styles/noscript.css"; */
 .App {
   text-align: center;
   /* background-color: black; */
@@ -381,7 +383,14 @@ header {
   grid-row: 4;
 }
 
+.html5up {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
 
+.style1 {
+
+}
 
 
 /* * {

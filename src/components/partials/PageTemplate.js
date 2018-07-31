@@ -46,4 +46,11 @@ export const Contact = () =>
     </section>
   </PageTemplate>
 
+export const AppList = () =>
+  <PageTemplate>
+    <section>
+      <h1>App List</h1>
+    </section>
+  </PageTemplate>
+
 export default PageTemplate;
