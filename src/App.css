@@ -107,7 +107,7 @@ h3 {
 }
 
 .square1 {
-  background-image: url("../img/laptop-icon copy.jpg");
+  background-image: url("./img/laptop-icon copy.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -126,23 +126,23 @@ h3 {
 }
 
 .square2 {
-  background-image: url("../img/cloud-red.jpg");
+  background-image: url("./img/cloud-red.jpg");
 }
 
 .square3 {
-  background-image: url("../img/router-darkblue.jpg");
+  background-image: url("./img/router-darkblue.jpg");
 }
 
 .square4 {
-  background-image: url("../img/mouse-yellow.jpg");
+  background-image: url("./img/mouse-yellow.jpg");
 }
 
 .square5 {
-  background-image: url("../img/desktop-pink.jpg");
+  background-image: url("./img/desktop-pink.jpg");
 }
 
 .square6 {
-  background-image: url("../img/server-navyblue.jpg");
+  background-image: url("./img/server-navyblue.jpg");
 }
 
 /* align-self: start;
@@ -242,7 +242,7 @@ grid-row: 3; */
 
 .home-container {
   height: 800px;
-  background-image: url("../img/home-background-flat.jpg");
+  background-image: url("./img/home-background-flat.jpg");
   background-position: contain;
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ header {
 }
 
 .contact-avatar-container {
-  background-image: url("../img/phone-square.jpg");
+  background-image: url("./img/phone-square.jpg");
 }
 
 
